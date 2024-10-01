@@ -2,21 +2,8 @@ import { useState } from 'react';
 import './styles.scss';
 
 const FormComponent = () => {
-  const [formData, setFormData] = useState({
-    firstname: '',
-    lastname: '',
-    dob: '',
-    phoneNumber: '',
-    username: '',
-    password: ''
-  });
-
+  
   const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData({
-      ...formData,
-      [name]: value
-    });
   };
 
   const handleSubmit = (e) => {
@@ -26,33 +13,33 @@ const FormComponent = () => {
 
   return (
     <div className="Form">
-      <h1>Interview Application Form</h1>
+      <h1>Create Your Account</h1>
       <form onSubmit={handleSubmit}>
         <div>
           <label>Firstname</label>
-          <input type="text" name="firstname" value={formData.firstname} onChange={handleChange} />
+          <input type="text" name="firstname"/>
         </div>
         <div>
           <label>Lastname</label>
-          <input type="text" name="lastname" value={formData.lastname} onChange={handleChange} />
+          <input type="text" name="lastname" />
         </div>
         <div>
           <label>Date of Birth</label>
-          <input type="date" name="dob" value={formData.dob} onChange={handleChange} />
+          <input type="date" name="dob"/>
         </div>
         <div>
           <label>Phone Number</label>
-          <input type="tel" name="phoneNumber" value={formData.phoneNumber} onChange={handleChange} />
+          <input type="tel" name="phoneNumber"/>
         </div>
         <div>
           <label>Username</label>
-          <input type="text" name="username" value={formData.username} onChange={handleChange} />
+          <input type="text" name="username"/>
         </div>
         <div>
           <label>Password</label>
-          <input type="password" name="password" value={formData.password} onChange={handleChange} />
+          <input type="password" name="password" />
         </div>
-        <button type="submit">Submit</button>
+        <button type="submit">Signup</button>
       </form>
     </div>
   );
