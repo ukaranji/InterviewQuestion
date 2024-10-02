@@ -25,11 +25,11 @@ const FormComponent = () => {
         </div>
         <div>
           <label>Date of Birth</label>
-          <input type="date" name="dob"/>
+          <input type="text" name="dob"/>
         </div>
         <div>
           <label>Phone Number</label>
-          <input type="tel" name="phoneNumber"/>
+          <input type="text" name="phoneNumber"/>
         </div>
         <div>
           <label>Username</label>
@@ -37,9 +37,9 @@ const FormComponent = () => {
         </div>
         <div>
           <label>Password</label>
-          <input type="password" name="password" />
+          <input type="text" name="password" />
         </div>
-        <button type="submit">Signup</button>
+        <button className="submitButton" type="submit">Signup</button>
       </form>
     </div>
   );

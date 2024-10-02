@@ -50,18 +50,14 @@ body {
     color: #000; 
   }
 
-  input[type="date"] {
-    
-  }
-  
   input:focus {
     border-color: #007bff;
     outline: none;
   }
   
-  button {
+  .submitButton {
     padding: 12px;
-    background-color: #007bff;
+    background-color: #875ab8;
     color: #fff;
     border: none;
     border-radius: 5px;
