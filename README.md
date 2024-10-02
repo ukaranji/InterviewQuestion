@@ -16,7 +16,7 @@ We'd like you to do the following:
 2. Implement validation for each field
     - Names should not contain numbers or special characters
     - Phone number should have 10 digits
-    - The date of birth must be that of someone who is at 18 years of age and born after December 31st, 1899
+    - The date of birth must be that of someone who is at least 18 years of age and born after December 31st, 1899
     - User name must be at least 8 characters, start with a letter and not have special characters.
     - Password should be between 8 and 18 characters, and must contain each of the following
         - An upper-case letter
