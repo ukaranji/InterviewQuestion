@@ -27,7 +27,10 @@ const FormComponent = () => {
           <label>Password</label>
           <input type="text" name="password" />
         </div>
-        <button className="submitButton" type="submit">Join</button>
+        <div className="buttonGroup">
+      <button type="submit" className="submitButton">Join</button>
+      <button type="button" className="cancelButton" onClick={() => window.close()}>Cancel</button>
+    </div>
       </form>
     </div>
   );
