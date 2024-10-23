@@ -11,7 +11,7 @@ npm run dev
 
 # Interview Question
 
-We have a very basic sign-up form written in React that we'd like you to flesh out.  We have the following fields…
+We have a very basic sign-up form written in React. We have the following fields…
 1. Name
 2. Date of Birth
 3. User name
@@ -19,20 +19,23 @@ We have a very basic sign-up form written in React that we'd like you to flesh o
 
 ...and a submit button.
 
+
 ## Primary Goal:
 We'd like you to connect this to our backend service that will either accept or reject the signup: https://react-interview-question-backend-evdphnararfqcvcm.canadacentral-01.azurewebsites.net
-The service expects a json body that will conforms to the spec described here: https://react-interview-question-backend-evdphnararfqcvcm.canadacentral-01.azurewebsites.net/swagger
+The service expects a POST request with a json body that conforms to the spec described here: https://react-interview-question-backend-evdphnararfqcvcm.canadacentral-01.azurewebsites.net/swagger
 
-**Acceptance Criteria:** successful reponse from the backend is shown, either in an alert, or in a console log.
+**Acceptance Criteria:** successful response from the backend is shown, either in an alert, or in a console log.
+
 
 ## Secondary Goal:
 Provide some kind of feedback to the user if their input is invalid or rejected.
-   - Bonus: identify what field or fields are invalid and why.
+   - Bonus: Render feedback for a specific inputs separately.
 
 **Acceptance Criteria:** html elements added to the page that become visible when an error has occured, displaying the error message to the user.
 
+
 ## Bonus Goal:
-Implement validation for each field
+Implement local validation for each field
     - Name should not contain numbers or special characters
     - The date of birth must be that of someone who is at least 18 years of age and born after December 31st, 1899
     - User name must be at least 8 characters, start with a letter and not have special characters.
