@@ -29,7 +29,7 @@ const FormComponent = () => {
           <label>Password</label>
           <input type="text" name="password" />
         </div>
-          <button type="submit" className="submitButton">Join</button>
+        <button type="submit" className="submitButton">Join</button>
       </form>
     </div>
   );
