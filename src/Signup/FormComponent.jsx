@@ -5,13 +5,11 @@ const FormComponent = () => {
   
   const handleSubmit = async (e) => {
     e.preventDefault();
-
-    
   };
 
   return (
     <div className="Form">
-      <h1>Create Your Account</h1>
+      <h1>Alaska Airlines Interview Question</h1>
       <form onSubmit={handleSubmit}>
         <div>
           <label>Name</label>
@@ -29,7 +27,7 @@ const FormComponent = () => {
           <label>Password</label>
           <input type="text" name="password" />
         </div>
-        <button className="submitButton" type="submit">Signup</button>
+        <button className="submitButton" type="submit">Join</button>
       </form>
     </div>
   );
