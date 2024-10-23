@@ -1,35 +1,25 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import './styles.scss';
 
 const FormComponent = () => {
   
-  const handleChange = (e) => {
-  };
-
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log('Form Data Submitted:', formData);
+
+
   };
 
   return (
     <div className="Form">
-      <h1>Create Your Account</h1>
+      <h1>Alaska Airlines Interview Question</h1>
       <form onSubmit={handleSubmit}>
         <div>
-          <label>Firstname</label>
-          <input type="text" name="firstname"/>
-        </div>
-        <div>
-          <label>Lastname</label>
-          <input type="text" name="lastname" />
+          <label>Name</label>
+          <input type="text" name="name"/>
         </div>
         <div>
           <label>Date of Birth</label>
           <input type="text" name="dob"/>
-        </div>
-        <div>
-          <label>Phone Number</label>
-          <input type="text" name="phoneNumber"/>
         </div>
         <div>
           <label>Username</label>
@@ -39,7 +29,7 @@ const FormComponent = () => {
           <label>Password</label>
           <input type="text" name="password" />
         </div>
-        <button className="submitButton" type="submit">Signup</button>
+        <button type="submit" className="submitButton">Join</button>
       </form>
     </div>
   );
