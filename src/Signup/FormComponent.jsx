@@ -5,6 +5,8 @@ const FormComponent = () => {
   
   const handleSubmit = async (e) => {
     e.preventDefault();
+
+
   };
 
   return (
@@ -28,9 +30,9 @@ const FormComponent = () => {
           <input type="text" name="password" />
         </div>
         <div className="buttonGroup">
-      <button type="submit" className="submitButton">Join</button>
-      <button type="button" className="cancelButton" onClick={() => window.close()}>Cancel</button>
-    </div>
+          <button type="submit" className="submitButton">Join</button>
+          <button type="button" className="cancelButton" onClick={() => window.close()}>Cancel</button>
+        </div>
       </form>
     </div>
   );
